@@ -26,14 +26,10 @@ export function ServiceIcon({ id, className = 'h-6 w-6' }: IconProps) {
           <path d="M3 15.5h18L16.5 20H7.5L3 15.5Z" />
         </svg>
       )
-    case 'gemini':
+    case 'claude':
       return (
         <svg {...props}>
-          <path d="M12 3v18" />
-          <path d="M3 12h18" />
-          <path d="M6.5 6.5 17.5 17.5" />
-          <path d="M17.5 6.5 6.5 17.5" />
-          <circle cx="12" cy="12" r="2.25" />
+          <path d="M12 3.5 13.2 9.2 19 8.2 14.6 12 19 15.8 13.2 14.8 12 20.5 10.8 14.8 5 15.8 9.4 12 5 8.2 10.8 9.2 12 3.5Z" />
         </svg>
       )
     case 'asana':

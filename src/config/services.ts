@@ -34,14 +34,14 @@ export const primaryServices: Service[] = [
     frequentlyUsed: true,
   },
   {
-    id: 'gemini',
-    name: 'Gemini',
+    id: 'claude',
+    name: 'Claude',
     category: 'AI Knowledge',
     description:
-      'Search and ask questions across the documents available to your Google account.',
-    url: 'https://gemini.google.com',
-    icon: 'gemini',
-    buttonLabel: 'Open Gemini',
+      'Ask questions and get help with writing, analysis, and document work.',
+    url: 'https://claude.ai',
+    icon: 'claude',
+    buttonLabel: 'Open Claude',
   },
   {
     id: 'asana',
@@ -132,8 +132,8 @@ export const quickGuide: GuideItem[] = [
   },
   {
     question: 'Need to ask a question about documents?',
-    answer: 'Gemini',
-    serviceId: 'gemini',
+    answer: 'Claude',
+    serviceId: 'claude',
   },
   {
     question: 'Need to track a deadline or task?',

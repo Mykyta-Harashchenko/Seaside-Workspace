@@ -65,7 +65,7 @@ All service destinations live in one place:
 Update:
 
 - `portalConfig` — brand name, title, subtitle, welcome message, footer
-- `primaryServices` — Google Drive, Gemini, Asana, Gmail, Calendar, 1Password
+- `primaryServices` — Google Drive, Claude, Asana, Gmail, Calendar, 1Password
 - `adminServices` — Workspace Admin, Emergency Continuity
 - `quickGuide` — question → destination mappings
 - `usefulLinks` — Advisors, Key Contacts, guides, etc.

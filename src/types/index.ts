@@ -1,6 +1,6 @@
 export type ServiceIconId =
   | 'drive'
-  | 'gemini'
+  | 'claude'
   | 'asana'
   | 'gmail'
   | 'calendar'
