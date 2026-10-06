@@ -14,7 +14,7 @@ export function ServiceCard({ service, compact = false }: ServiceCardProps) {
     <article
       className={[
         'group flex h-full flex-col rounded-2xl border bg-[var(--surface)] shadow-[var(--shadow-card)] transition duration-200',
-        'hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)]',
+        'hover:-translate-y-0.5 hover:border-[var(--blue)]/25 hover:shadow-[var(--shadow-card-hover)]',
         'focus-within:ring-2 focus-within:ring-[var(--blue)]/35 focus-within:ring-offset-2 focus-within:ring-offset-[var(--bg)]',
         isEmergency
           ? 'border-[var(--gold)]/35 bg-[linear-gradient(180deg,rgba(166,139,91,0.06),transparent_45%)]'
@@ -87,15 +87,15 @@ export function ServiceCard({ service, compact = false }: ServiceCardProps) {
         target="_blank"
         rel="noopener noreferrer"
         className={[
-          'inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium transition',
+          'inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold tracking-wide text-white shadow-sm transition',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blue)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--surface)]',
           isEmergency
-            ? 'bg-[var(--navy)] text-white hover:bg-[var(--navy-deep)]'
-            : 'bg-[var(--blue)] text-white hover:bg-[var(--blue-deep)]',
+            ? 'bg-[var(--navy)] hover:bg-[var(--navy-deep)]'
+            : 'bg-[var(--button)] hover:bg-[var(--button-hover)]',
         ].join(' ')}
       >
         <span>{service.buttonLabel}</span>
-        <ExternalLinkIcon className="h-3.5 w-3.5 opacity-90" />
+        <ExternalLinkIcon className="h-3.5 w-3.5 text-white" />
       </a>
     </article>
   )

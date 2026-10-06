@@ -40,7 +40,7 @@ export function QuickGuide() {
               <span className="text-[0.95rem] text-[var(--text)]">
                 {item.question}
               </span>
-              <span className="inline-flex items-center gap-2 text-sm font-medium text-[var(--blue)]">
+              <span className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--blue)]">
                 {item.answer}
                 <ArrowIcon className="h-3.5 w-3.5" />
               </span>
